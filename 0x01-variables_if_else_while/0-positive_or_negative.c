@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
- * main - print zero print positive print negative
+ * main - Entry point
  *
  * Return: Always 0
  */
@@ -23,6 +24,5 @@ int main(void)
 	{
 		printf("%d is positive\n", n);
 	}
-
 	return (0);
 }
