@@ -1,23 +1,17 @@
 #include "main.h"
 
 /**
- * _strchr - Locates a character in a string.
- * @s: The string to be searched.
- * @c: The character to be located.
+ * _strlen - checks the length of a string
+ * @s: string to check
  *
- * Return: If c is found - a pointer to the first occurence.
- * If c is not found - NULL.
+ * Return: int length of the string
  */
 
-char *_strchr(char *s, char c)
+int _strlen(char *s)
 {
-	int index;
+	int length = 0;
 
-	for (index = 0; s[index] >= '\0'; index++)
-	{
-		if (s[index] == c)
-			return (s + index);
-	}
-
-	return ('\0');
+	while (s[length])
+		length++;
+	return (length);
 }
